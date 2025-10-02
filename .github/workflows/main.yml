@@ -1,24 +1,6 @@
-# name: "vaibhav"
+name: "vaibhav"   #name of the workflow
 
-# on:
-#   push:
-#     branches:
-#       - 'features/**'
-#       - 'main'
-#       - 'hotfixes/**'
-
-# jobs:
-#   vaibhavgithub:
-#     name: vaibhav
-#     runs-on: SATYAPRAKASH
-#     steps:
-#       - name: Say Hello
-#         run: echo "Hello from Vaibhav's workflow!"
-
-
-name: "vaibhav"
-
-on:
+on:                          #This defines triggers
   push:
     branches:
       - 'features/**'
@@ -26,10 +8,10 @@ on:
       - 'hotfixes/**'
 
 jobs:
-  vaibhavgithub:
-    name: vaibhav
+  vaibhavgithub:    #Job ID
+    name: vaibhav    #Display name
     runs-on: [self-hosted, Windows, X64, hp]   # <-- use labels, not runner name
     steps:
-      - name: Say Hello
-        run: echo "Hello from Vaibhav's workflow!"
+      - name: Say Hello  #Display name
+        run: echo "Hello from Vaibhav's workflow!"  #TASK
 
