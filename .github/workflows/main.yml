@@ -1,3 +1,21 @@
+# name: "vaibhav"
+
+# on:
+#   push:
+#     branches:
+#       - 'features/**'
+#       - 'main'
+#       - 'hotfixes/**'
+
+# jobs:
+#   vaibhavgithub:
+#     name: vaibhav
+#     runs-on: SATYAPRAKASH
+#     steps:
+#       - name: Say Hello
+#         run: echo "Hello from Vaibhav's workflow!"
+
+
 name: "vaibhav"
 
 on:
@@ -10,7 +28,8 @@ on:
 jobs:
   vaibhavgithub:
     name: vaibhav
-    runs-on: SATYAPRAKASH
+    runs-on: [self-hosted, Windows, X64, hp]   # <-- use labels, not runner name
     steps:
       - name: Say Hello
         run: echo "Hello from Vaibhav's workflow!"
+
