@@ -1,1 +1,16 @@
+name: "vaibhav"
 
+on:
+  push:
+    branches:
+      - 'features/**'
+      - 'main'
+      - 'hotfixes/**'
+
+jobs:
+  vaibhavgithub:
+    name: vaibhav
+    runs-on: SATYAPRAKASH
+    steps:
+      - name: Say Hello
+        run: echo "Hello from Vaibhav's workflow!"
